@@ -11,3 +11,5 @@
 ```
 
 - Only a few methods currently, run from command line, output will be a .csv file
+
+- `stats_to_csv()` gets followed tumblr blogs posts and annotates based on their tags, outputs to a csv file.
