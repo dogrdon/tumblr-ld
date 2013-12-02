@@ -133,7 +133,7 @@ def stats_to_csv():
                 
                 
                 try:
-                    annotations = annotate_posts(tags)
+                    annotations = annotate_posts(tags) #this instance of annotation uses tags, but you can use which ever string of text has the entities you want to annotate
                 except:
                     annotations = 'Error collecting annotations'
                 #annotations = annotations.encode('utf-8')
@@ -145,7 +145,7 @@ def stats_to_csv():
     
     #return post_stats
 
-#this function will grab details for each post and annotate it using dpedia spotlight
+#this function will grab details for each post and annotate it using dpedia spotlight uses the pyspotlight library, more details at: https://github.com/newsgrape/pyspotlight
 def annotate_posts(text):
     annotations = spotlight.annotate(DBPEDIA_URL, text, confidence = CONFIDENCE, support = SUPPORT)
     return annotations
