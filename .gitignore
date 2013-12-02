@@ -1,5 +1,6 @@
-venv/*
-tumblrscrape/*
+venv/
+tumblrscrape/
 *.csv
 *.pyc
 tumblrapi.py
+tumblrkeys.py
